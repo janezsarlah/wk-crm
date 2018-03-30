@@ -136,7 +136,7 @@ class Wk_Crm {
 	 * @access   private
 	 */
 	private function set_locale() {
-
+	
 		$plugin_i18n = new Wk_Crm_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
@@ -180,7 +180,7 @@ class Wk_Crm {
 	 *
 	 * @since    1.0.0
 	 */
-	public function run() {
+	public function run() {		
 		$this->loader->run();
 	}
 
